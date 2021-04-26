@@ -5,3 +5,7 @@ variable "provider_token" {
 provider "fakewebservices" {
   token = var.provider_token
 }
+
+output "test" {
+  value = terraform.workspace
+}
